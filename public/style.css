@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.7rem 9%; /* Adjust padding as needed */
+    background-color: #f6fbf6; /* Set your desired background color */
+    /* Set your desired text color */
+    position: sticky;
+    top: 0;left: 0; right: 0;
+    z-index: 100;
+    
+    
+.logo{
+   font-size: 2rem; 
+   color: #04183f;
+   font-weight: bold;
+   text-decoration: none;
+}
+.logo span{
+    color: rgb(37, 175, 230);
+}
+i{
+    padding-right: .3rem;
+    margin: 0;
+}
+
+}
+.search{
+    height: 4rem;
+    width: 35rem;
+    border-radius: 5rem;
+    background: #779;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: #04183f;
+}
+input{
+    height:85%;
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    color: #04183f;
+    text-transform: none;
+    margin-left: 15px;
+    
+}
+label{
+    font-size: 2.5rem;
+    padding-right: 1.7rem;
+    cursor: pointer;
+    color: #04183f;
+
+    &:hover{
+        color:rgb(37, 175, 230);
+    }
+}
+
+
+
+/* Style for Font Awesome icons */
+#search {
+    font-size: 2rem;
+    margin-left: 5px; /* Add space between icons and text */
+}
+#login-btn{
+    font-size: 3rem;
+    margin-right: 0;
+    color: #04183f;
+}
+.form-builder{
+    justify-content: space-between;
+    display: flex;
+    padding: 200px;
+    background-image: url(2286293.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+
+.text h1{
+    font-size: 2rem; 
+    color: #04183f;
+    font-weight: bold;
+    }
+.text p{
+        font-size: 1rem; 
+        color: #04183f;
+       text-align: left;
+        }
+.form-builder button{
+    background-color: #04183f;
+    color: #f6fbf6;
+    height: 45px;
+    width: 80px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+

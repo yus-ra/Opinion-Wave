@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opinion wave</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
 </head>
 <body>
-    <header>
-        <h1>Form Builder</h1>
+    <header class="header">
+        <a href="index.html" class="logo"><i class="fas fa-lightbulb"></i>Opinion<span>Wave</span></a>
+        <form action="" method="post" class="search">
+        <input type="search" name="search" placeholder="Search Anything">
+          <label for="search" class="fas fa-search" id="search"></label>
+        </form>
+          <div class="fas fa-user-circle" id="login-btn"></div>
     </header>
     <main>
         <div class="form-builder">
-            <!-- Form builder UI goes here -->
+           <div class="text"><h1>Opinion<span>Wave</span></h1>
+            <p>The School interactive survey form and enhancing school experience</p>
+           <button type="submit" value="submit">Sign in</button>
         </div>
+</div>
+
     </main>
     <script src="index.js"></script>
 </body>
