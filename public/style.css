@@ -201,8 +201,8 @@ img {
 .buttons button {
     background-color:#fff ;
     color: #04183f;
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 500;
     height: 45px;
     width: 25%;
     border-radius: 10px;
@@ -210,3 +210,82 @@ img {
     border: 0;
 }
 /*get started ends*/
+.footer {
+    background-color:#f6fbf6;
+    color:#04183f;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media a {
+    font-size: 24px;
+    color:#04183f;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction:column; /* Stack elements vertically */
+        align-items: flex-start;
+        padding: 1rem 10px; /* Adjust padding as needed */
+    }
+
+    .search {
+        width: 75%; /* Make the search bar full width */
+    }
+
+    .text {
+        width: 100%; /* Make text content full width */
+        margin-top: 20px; /* Add spacing */
+    }
+
+    .form-builder {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px; /* Adjust padding as needed */
+    }
+
+    .form-builder img {
+        max-width: 100%; /* Make the image full width */
+    }
+
+    .section-2,
+    .section {
+        flex-direction: column;
+        padding: 20px; /* Adjust padding as needed */
+    }
+
+    .section button {
+        width: 100%; /* Make buttons full width */
+        margin-top: 20px; /* Add spacing between buttons */
+    }
+
+    .get-started h1 {
+        font-size: 1.5rem; /* Reduce font size */
+    }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        margin-top: 20px; /* Add spacing between buttons */
+    }
+
+    .buttons button {
+        width: 100%; /* Make buttons full width */
+    }
+}
+
+/* Styles for screens with a maximum width of 480px (e.g., smartphones) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem; /* Reduce font size further */
+    }
+
+    .header {
+        padding: 1rem 5px; /* Adjust padding as needed */
+    }
+}
+
