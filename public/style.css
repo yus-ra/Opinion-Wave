@@ -6,30 +6,47 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:.5rem 9%; /* Adjust padding as needed */
-    background-color: #f6fbf6; /* Set your desired background color */
-    /* Set your desired text color */
+    padding: 0.5rem 9%;
+    background-color: #f6fbf6;
+    width: 90%;
     position: sticky;
-    top: 0;left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
-    
-    
-.logo{
-   font-size: 2rem; 
-   color: #04183f;
-   font-weight: bold;
-   text-decoration: none;
-}
-.logo span{
-    color: rgb(37, 175, 230);
-}
-i{
-    padding-right: .3rem;
-    margin: 0;
 }
 
+.logo {
+    font-size: 2rem;
+    color: #04183f;
+    font-weight: bold;
+    text-decoration: none;
 }
-.search{
+
+.logo span {
+    color: rgb(37, 175, 230);
+}
+
+/* Use the correct Font Awesome class for icons */
+.fas {
+    padding-right: 0.3rem;
+}
+
+/* Increase the size of Font Awesome icons */
+#search,
+#login-btn {
+    font-size: 2.5rem; /* Adjust the size as needed */
+    margin-left: 10px; /* Add space between icons and text */
+    color: #04183f;
+}
+#search{
+    font-size: 1.5rem;
+}
+#search:hover {
+    color: rgb(37, 175, 230);
+}
+
+.search {
     height: 2.5rem;
     width: 25rem;
     border-radius: 5rem;
@@ -39,40 +56,27 @@ i{
     align-items: center;
     border: #04183f;
 }
-input{
-    height:85%;
+
+input {
+    height: 85%;
     width: 100%;
     padding: 0 1rem;
     font-size: 1rem;
     color: #04183f;
     text-transform: none;
     margin-left: 15px;
-    
 }
-label{
-    font-size:1.5rem;
+
+label {
+    font-size: 1.5rem;
     padding-right: 1.7rem;
     cursor: pointer;
     color: #04183f;
-
-    &:hover{
-        color:rgb(37, 175, 230);
-    }
 }
 
 
 
-/* Style for Font Awesome icons */
-#search {
-    font-size: 1.5rem;
-    margin-left: 10px; /* Add space between icons and text */
-}
-#login-btn{
-    font-size: 2.5rem;
-    margin-right: 0;
-    color: #04183f;
-    border: 0;
-}
+
 /*form builder section*/
 .form-builder{
     display: flex;
@@ -140,6 +144,7 @@ img {
 .text-2 {
     width: 50%; 
     padding: 20px;
+   
 }
 
 .text-2 h1 {
@@ -233,7 +238,7 @@ img {
 
 
 /*Signin page style*/
-body {
+.body{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -256,24 +261,37 @@ body {
 
 .container .img {
     background-color: #f6fbf6;
-    flex: 2;
+    flex: 4;
     align-items: center; /* Align the image in the container */
     background-image:url('/Images/signin.png');
     background-size:cover;
     background-repeat: no-repeat;
 }
-
-
-
+.container .image {
+    background-color: #f6fbf6;
+    flex: 4;
+    align-items: center; /* Align the image in the container */
+    background-image:url('/Images/Signup.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .form {
+    width: 50%;
     padding: 2rem 4rem;
     background-color: #fff;
-    flex: 1;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+
+
+
 .form .signin {
-    margin-left: 2rem; /* Adjusted margin */
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #04183f;
     font-weight: bold;
     text-decoration: none;
@@ -285,19 +303,72 @@ body {
     color: rgb(37, 175, 230);
 }
 
-.input input {
-    justify-content: center;
-    padding: 1rem;
+/* Your existing CSS for .form */
+
+/* Additional CSS for styling icons and inputs */
+.input {
+    display: flex;
+    align-items: center;
     margin-bottom: 1rem;
-    border-radius: 1rem;
-    width: 100%; /* Adjusted width */
-    border: 1px solid #ccc; /* Added border for better visibility */
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid #04183f;
+    background-color: #f6fbf6;
 }
 
-.fas{
-    font-size: 1.5rem; /* Adjusted font size */
-    margin-right: 0.5rem; /* Added spacing between icon and input */
+.input i {
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
     color: #04183f;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.input input {
+    flex: 1; /* Take remaining width */
+    padding: 0.8rem;
+    border: none;
+    font-size: .8rem;
+    color: #04183f;
+    background: none;
+    box-sizing: border-box;
+    outline: none; 
+    margin: 0;
+}
+
+/* Ensure placeholder text is visible */
+.input input::placeholder {
+    color: #04183f;
+    opacity: 0.6;
+}
+
+/* Additional style for focus effect */
+.input input:focus {
+    border-color: #3278ef;
+}
+
+
+
+
+
+.form button {
+    background-color: #04183f;
+    color: #fff;
+    height: 45px;
+    width: 50%; 
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    font-size: .8rem;
+}
+
+.in {
+    font-size: 0.7rem;
+    text-align: center; /* Center the text */
+}
+
+.in a {
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
