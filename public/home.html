@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+    <header class="header">
+        <a href="index.html" class="logo"><i class="fas fa-lightbulb"></i>Opinion<span>Wave</span></a>
+        <form action="" method="post" class="search">
+            <input type="search" name="search" placeholder="Search Anything">
+            <label for="search" class="fas fa-search" id="search"></label>
+        </form>
+      <a href="#" id="login-btn"><i class="fas fa-user-circle"></i></a>
+    </header>
+    <main>
+  <div class="container">
+    <div class="forms-list">
+      <h2>Your Forms</h2>
+      <ul id="formsList"></ul>
+    </div>
+    <button class="form-button" id="newFormButton">+ New Form</button>
+    <div class="form-panel" id="formPanel">
+      <h2>Create a New Form</h2>
+      <form id="createFormForm">
+        <label for="formTitle">Form Title:</label>
+        <input type="text" id="formTitle" class="form-input"placeholder="Enter form title" required>
+        <button class="form-button" type="submit">Create Form</button>
+      </form>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</main>
+</body>
+</html>

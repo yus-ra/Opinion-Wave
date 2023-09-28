@@ -1,10 +1,22 @@
-// public/script.js
-const formBuilder = document.querySelector('.form-builder');
-const addButton = document.querySelector('#add-button');
+const newFormButton = document.getElementById('newFormButton');
+const formPanel = document.getElementById('formPanel');
+const createFormForm = document.getElementById('createFormForm');
+const formsList = document.getElementById('formsList');
 
-addButton.addEventListener('click', () => {
-    const inputField = document.createElement('input');
-    inputField.setAttribute('type', 'text');
-    inputField.setAttribute('placeholder', 'Enter your question');
-    formBuilder.appendChild(inputField);
+newFormButton.addEventListener('click', () => {
+  formPanel.style.display = 'block';
 });
+
+createFormForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const formTitle = document.getElementById('formTitle').value;
+  addFormToList(formTitle);
+  formPanel.style.display = 'none';
+});
+
+function addFormToList(formTitle) {
+  const listItem = document.createElement('li');
+  listItem.textContent = formTitle;
+  formsList.appendChild(listItem);
+}
+
