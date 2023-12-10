@@ -29,7 +29,15 @@ DEBUG = True
 import socket
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-s.connect(("8.8.8.8", 80))
+# s.connect(("8.8.8.8", 80))
+try:
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect(("8.8.8.8", 80))
+    # Your code for handling the socket connection (e.g., sending/receiving data)
+    s.close()
+except OSError as e:
+    # Handle the exception, such as printing an error message or logging
+    print(f"Error: {e}")
 
 ALLOWED_HOSTS = [s.getsockname()[0], '127.0.0.1', 'localhost']
 s.close()
@@ -45,6 +53,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
 
 MIDDLEWARE = [

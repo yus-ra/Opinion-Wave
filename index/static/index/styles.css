@@ -2,14 +2,20 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
-/* heading styling starts*/
+/* heading stylin;g starts*/
 .header {
+    background-color: #f6fbf6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 9%;
-    background-color: #f6fbf6;
-    position: fixed;
+    padding: 10px 20px; /* Adjust padding as needed */
+    width: 100%; /* Make the header full width */
+    box-sizing: border-box; /* Ensure padding is included in the width*/
+    margin-bottom:2rem;
 }
 
 .logo {
